@@ -1,0 +1,7 @@
+{
+	"urls": {
+		"home": {
+			"video": "rtsp://hass:eggsbacon-1@192.168.20.113:88/videoMain"
+		}
+	}
+}

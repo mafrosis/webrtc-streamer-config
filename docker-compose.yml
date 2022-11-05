@@ -1,0 +1,13 @@
+---
+version: '3'
+
+services:
+  webrtc:
+    command: -H 0.0.0.0:8000 -C config.json -s-
+    image: mpromonet/webrtc-streamer
+    restart: unless-stopped
+    network_mode: host
+    ports:
+      - 8000:8000
+    volumes:
+      - ./webrtc-streamer.json:/app/config.json
